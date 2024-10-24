@@ -1,0 +1,37 @@
+{
+    "plugins": {
+        "@textlint/markdown": true,
+        "@textlint/text": true,
+        "html": true,
+        "jsx": true
+    },
+    "rules": {
+        "@textlint-rule/no-unmatched-pair": true,
+        "@textlint-rule/textlint-rule-no-invalid-control-character": true,
+        "common-misspellings": true,
+        "doubled-spaces": true,
+        "en-spell": {
+            "personalDictionary": ["HTTPS"]
+        },
+        "ginger": true,
+        "no-nfd": true,
+        "no-zero-width-spaces": true,
+        "write-good": true,
+        "preset-jtf-style": {
+            "2.2.1.ひらがなと漢字の使い分け": true,
+            "3.1.1.全角文字と半角文字の間": false
+        },
+        "preset-ja-spacing": {
+            "ja-space-between-half-and-full-width": {
+                "space": "always"
+            }
+        },
+        "preset-ja-technical-writing": {
+            "ja-no-successive-word": {
+                "allow": ["…", "—"]
+            },
+            "no-exclamation-question-mark": false,
+            "sentence-length": false
+        }
+    }
+}
